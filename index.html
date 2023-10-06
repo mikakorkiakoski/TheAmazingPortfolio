@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Amazing Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6d4ce6f148.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/images/logomika.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <span class="auto-input"></span>
+        <h1>Hi, I'm <span class ="name">Mika Korkiakoski</span><br> from <span class="country">Finland</span>
+        </div>
+    </div>
+</div>
+
+<!---------------- About Section Start --------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/images/portrait.jpeg" alt="userImage">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A versatile professional skilled in both programming and electrical 
+                    systems, adept at crafting software solutions and ensuring the efficient
+                     operation of electrical components and systems.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Full-stack Development</span><br>I am a versatile full-stack developer with expertise in both 
+                                  front-end and back-end technologies, capable of delivering end-to-end solutions for web and software projects</li>
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>10/2018-Current</span><br>Automation assembler in several factories at Insta Co.</li>
+                            <li><span>07/2023</span><br>Insta Co. Automation department Team Leader substitute</li>
+                            <li><span>2019-2021</span><br>Stora Enso Co. OCO project</li>
+                        </ul>
+                    </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-Current</span><br>Studying Information Technology as a major at the Oulu University of Applied Sciences</li>
+                                <li><span>2021-2022</span><br>Studied electric engineering at the Oulu University of Applied Sciences</li>
+                                <li><span>2014-2017</span><br>Electrician's vocational upper secondary qualification from OSAO</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------About Section End---------------------------->
+<!--------------------Service Section Start------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                    <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>My web design service offers tailored solutions to create visually appealing and user-friendly websites
+                         that align with your brand identity and business goals, ensuring a captivating online presence</p>
+                    <a href='#'>Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>My UI/UX design service focuses on crafting intuitive and visually engaging user interfaces, enhancing 
+                            the overall user experience by creating user-centric designs that drive customer satisfaction and retention.</p>
+                        <a href='#'>Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <h2>Device-Oriented Programming</h2>
+                        <p>My device-oriented programming service specializes in developing customized software solutions tailored
+                             to optimize the functionality and user experience of specific hardware
+                              devices, ensuring seamless integration and enhanced performance.</p>
+                        <a href='#'>Learn more</a>
+                    </div>
+
+        </div>
+    </div>
+</div>
+<!--------------------Service Section End------------------------>
+<!--------------------Portfolio Section Start-------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/images/bankatm.png" alt="Bank ATM Photo">
+                <div class="layer">
+                    <h3>Bank ATM Project</h3>
+                    <p>The Bank ATM Project aims to create a secure and user-friendly automated teller 
+                        machine system for seamless financial transactions.</p>
+                        <a href="https://github.com/mikakorkiakoski/PankkiautomaattiProjekti" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/images/arduinogamepad.png" alt="GamePad Photo">
+                <div class="layer">
+                    <h3>Arduino GamePad Project</h3>
+                    <p>Arduino GamePad Project involves designing and building 
+                        a customizable and interactive gaming controller for enhanced gameplay experiences.</p>
+                        <a href="https://github.com/mikakorkiakoski/ArduinoGamePad" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/images/chessphoto.png" alt="">
+                <div class="layer">
+                    <h3>One-move Chess Game WebPage</h3>
+                    <p>The One-Move Chess Game WebPage provides users with a simple and 
+                        engaging platform to make a single move in a chess game, suitable for quick strategic challenges.</p>
+                        <a href="https://mikakorkiakoski.github.io/javascripttehtava1/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/mikakorkiakoski" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------Portfolio Section End-------------------->
+
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="assets/js/app.js"></script>
+    
+</body>
+</html>
