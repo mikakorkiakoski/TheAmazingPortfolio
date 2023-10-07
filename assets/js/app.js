@@ -1,5 +1,24 @@
+//==============Scroll up button Section Start============//
 
-//======== ABOUT ME TOGGLE SECTION START //
+function toggleScrollToTopButton() {
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+window.addEventListener("scroll", toggleScrollToTopButton);
+
+//==============Scroll up button End============//
+
+//======== ABOUT ME TOGGLE SECTION START ========== //
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -34,11 +53,31 @@ var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
     sidemenu.style.right = "0";
+    document.body.style.overflow = "hidden";
     
 }
 
 function closemenu() {
     sidemenu.style.right = "-200px";
+    document.body.style.overflow = "auto";
 }
 
+document.addEventListener("click", function(event) {
+    var nav = document.querySelector("nav");
+    var ul = document.querySelector("nav ul");
+
+    // Check if the clicked element is not inside the nav element
+    if (event.target !== nav && !nav.contains(event.target)) {
+        // Check if the nav menu is open (right value is not -200px)
+        if (ul.style.right !== "-200px") {
+            // Close the nav menu by setting right to -200px
+            closemenu();
+        }
+    }
+});
+
+
 //================== SideMenu For Media Screens max 600px End ================== //
+
+
+
