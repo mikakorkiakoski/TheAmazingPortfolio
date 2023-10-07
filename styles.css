@@ -423,12 +423,15 @@ nav .fa-solid {
 
 
     .header-text {
-        margin-top: 200%;
+        margin-top: 150%;
         font-size: 16px;
+         /* Add a 2px solid black border around the element */
     }
+    
 
     .header-text h1 {
         font-size: 30px;
+        -webkit-text-stroke: 1px black;
     }
 
     nav .fa-solid {
