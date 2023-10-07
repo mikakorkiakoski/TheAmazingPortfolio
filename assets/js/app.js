@@ -1,5 +1,4 @@
 
-
 //======== ABOUT ME TOGGLE SECTION START //
 
 var tablinks = document.getElementsByClassName("tab-links");
@@ -28,3 +27,18 @@ let typed = new Typed('.auto-input', {
 })
 
 //================== TYPING ANIMATION END ================ //
+
+//================== SideMenu For Media Screens max 600px Start ================== //
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+    
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+//================== SideMenu For Media Screens max 600px End ================== //
