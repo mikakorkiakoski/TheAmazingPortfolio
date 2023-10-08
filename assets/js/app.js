@@ -81,22 +81,41 @@ document.addEventListener("click", function(event) {
 
 //================== Contact Form Submit Start ======================= //
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbREj0hFOBjyXJSGiDwuWHA791WliA8Z3CIh39i8ue-R3hsIqrH71DsFLPzxHaM7Zy/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const submitMsg = document.getElementById("submitMsg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            submitMsg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                submitMsg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxbREj0hFOBjyXJSGiDwuWHA791WliA8Z3CIh39i8ue-R3hsIqrH71DsFLPzxHaM7Zy/exec';
+const form = document.forms['submit-to-google-sheet'];
+const submitMsg = document.getElementById("submitMsg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  // Simulate an error condition for testing
+  const simulateError = false; // Change this to true to simulate an error
+
+  if (simulateError) {
+    // Simulate an error response
+    submitMsg.innerHTML = "An error occurred while sending the message. Please try again later.";
+  } else {
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        if (response.ok) {
+          submitMsg.innerHTML = "Message sent successfully!";
+          setTimeout(function() {
+            submitMsg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        } else {
+          submitMsg.innerHTML = "An error occurred while sending the message. Please try again later.";
+        }
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        submitMsg.innerHTML = "An error occurred while sending the message. Please try again later.";
+      });
+  }
+});
+
+
   
 
 //================== Contact Form Submit End ======================= //
