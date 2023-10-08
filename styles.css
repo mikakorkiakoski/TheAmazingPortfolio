@@ -23,7 +23,6 @@ body {
     background: url(assets/images/backgroundphoto.png);
     background-size: cover;
     background-position: right;
-    background-attachment: fixed;
 }
 .container {
     padding: 10px 10%;
