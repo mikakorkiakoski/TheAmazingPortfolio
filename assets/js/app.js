@@ -86,6 +86,7 @@ const form = document.forms['submit-to-google-sheet'];
 const submitMsg = document.getElementById("submitMsg");
 
 form.addEventListener('submit', e => {
+  submitMsg.innerHTML = "Sending...";
   e.preventDefault();
 
   // Simulate an error condition for testing
@@ -95,7 +96,7 @@ form.addEventListener('submit', e => {
     // Simulate an error response
     submitMsg.innerHTML = "An error occurred while sending the message. Please try again later.";
   } else {
-    
+
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => {
         if (response.ok) {
@@ -119,7 +120,5 @@ form.addEventListener('submit', e => {
   
 
 //================== Contact Form Submit End ======================= //
-
-
 
 
