@@ -100,6 +100,7 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => {
         if (response.ok) {
+          playSuccessSound();
           submitMsg.innerHTML = "Message sent successfully!";
           setTimeout(function() {
             submitMsg.innerHTML = "";
@@ -107,11 +108,19 @@ form.addEventListener('submit', e => {
           form.reset();
         } else {
           submitMsg.innerHTML = "An error occurred while sending the message. Please try again later.";
+          setTimeout(function() {
+            submitMsg.innerHTML = "";
+          }, 5000);
+          form.reset();
         }
       })
       .catch(error => {
         console.error('Error!', error.message);
         submitMsg.innerHTML = "An error occurred while sending the message. Please try again later.";
+        setTimeout(function() {
+          submitMsg.innerHTML = "";
+        }, 5000);
+        form.reset();
       });
   }
 });
@@ -120,5 +129,16 @@ form.addEventListener('submit', e => {
   
 
 //================== Contact Form Submit End ======================= //
+// =================Sound for Form Submit Success Start =========== //
+
+function playSuccessSound() {
+  var audio = document.getElementById("successSound");
+  audio.play();
+}
+
+
+
+
+// =================Sound for Form Submit Success End =========== //
 
 
