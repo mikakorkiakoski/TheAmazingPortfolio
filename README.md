@@ -57,7 +57,9 @@ Includes a "See more" button that links to Mika's GitHub profile.
 Provides contact information, including email and phone number.
 Offers links to Mika's social media profiles.
 Includes a downloadable CV.
-Features a contact form for sending messages.
+Features a contact form for sending messages. The message comes to my google sheet:
+![html1](reviewImages/submitting.png)
+![html1](reviewImages/googlesheet.png)
 
 ## Navigation
 The navigation menu allows users to jump to different sections of the website by clicking on menu items.
