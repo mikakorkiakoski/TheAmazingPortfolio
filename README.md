@@ -211,6 +211,10 @@ Here's what the sheet looks like:
 
 ![ao1](reviewImages/googlesheet.png)
 
+If this is not enough, teacher said that objectives can also be made to another program. So here are the links where i fetch NASA's picture of the day to my another portfolio in the news section!: https://github.com/mikakorkiakoski/javascripttehtava4/blob/main/pictureoftheday.js .
+https://mikakorkiakoski.github.io/javascripttehtava4/news.html
+
+
 
 ### 4/5 Error handling is implemented (for failed API calls, etc.).
  Error handlings are implemented in message form submission.
@@ -218,7 +222,3 @@ Here's what the sheet looks like:
 ### 5/5 Effective use of asynchronous data to enhance user experience (like filtering, sorting).
 
 no.
-
-
-
-
