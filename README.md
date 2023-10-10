@@ -203,7 +203,13 @@ ScrollToTopButton.style.display = "block";
 
 
 ### 3/5 Data from the asynchronous call is displayed on the webpage.
-While the data fetched is not directly displayed on the webpage, the user receives feedback on the form submission result.
+While the data fetched is not directly displayed on the webpage, the user receives feedback on the form submission result. On the other hand, i can see the message and message sender's name and email that is submitted with contact form in google sheet with this code:
+
+![ao1](reviewImages/contactformcode.png)
+
+Here's what the sheet looks like:
+
+![ao1](reviewImages/googlesheet.png)
 
 
 ### 4/5 Error handling is implemented (for failed API calls, etc.).
