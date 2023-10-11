@@ -168,7 +168,7 @@ In the function opentab, tablinks and tabcontents are arrays of elements selecte
 
 ![js3](reviewImages/js3.png)
 
-In the typing animation there is object called 'typed' which is instance from class called 'Typed'.
+In the typing animation there is variable called 'typed' which is instance from class called 'Typed'.
 
 ![js3.1](reviewImages/js3.1.png)
 
