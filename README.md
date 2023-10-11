@@ -105,7 +105,10 @@ Forms and links are being used, i didn't need any media for my page but i added 
 
 ### 4/5 Tables are effectively used.
 
-I don't have any tabular data yet.
+I didn't want to use tables in my Portfolio page, so teacher said to me that table can be made to different site. So here are the links for my table page to get a point from this section: https://mikakorkiakoski.github.io/mikantable/ .
+https://github.com/mikakorkiakoski/mikantable/blob/main/index.html .
+
+
 
 ### 5/5 Consistent use of semantic HTML throughout, ensuring better structure and understanding of the content. 
 For example i use header and nav:
@@ -151,6 +154,8 @@ Yes my portfolio page is very nice when looking with computer and also with mobi
 
 ![js1](reviewImages/js1.png)
 
+I also have function closemenu() onclick in navigation bar's href buttons so it always closes menu when navbar's buttons are clicked with mobile-device.
+
 ### 2/5 Multiple event listeners and basic DOM manipulations.
 Here are 3 event listeners and if you just open app.js you can see every function is basically DOM manipulation.
 
@@ -163,7 +168,7 @@ In the function opentab, tablinks and tabcontents are arrays of elements selecte
 
 ![js3](reviewImages/js3.png)
 
-In the typing animation there is object called 'Typed'
+In the typing animation there is object called 'typed' which is instance from class called 'Typed'.
 
 ![js3.1](reviewImages/js3.1.png)
 
@@ -187,7 +192,7 @@ class 'tablinks' using the 'for...'of' loop, represented by 'tablink'.
 ![js4.2](reviewImages/js4.2.png)
 
 ### 5/5 Consistent use of Object-Oriented JavaScript principles.
-As i said i use 'Typed' object as a constructor. Another instances of object-oriented programming principles that are being used are var tablinks and var tabcontents that are using HTMLCollection to return elements with the specified class name. Also there is HTMLDivElement objects being used when i want to access and modify the styles and properties of DOM elements, such as
+As i said i use 'Typed' object as a constructor. I got this object from library shown in the end of index.html file. Another instances of object-oriented programming principles that are being used are var tablinks and var tabcontents that are using HTMLCollection to return elements with the specified class name. Also there is HTMLDivElement objects being used when i want to access and modify the styles and properties of DOM elements, such as
 ScrollToTopButton.style.display = "block";
 
 ### Asynchronous Operations
@@ -211,7 +216,7 @@ Here's what the sheet looks like:
 
 ![ao1](reviewImages/googlesheet.png)
 
-If this is not enough, teacher said that objectives can also be made to another program. So here are the links where i fetch NASA's picture of the day to my another portfolio in the news section!: https://github.com/mikakorkiakoski/javascripttehtava4/blob/main/pictureoftheday.js .
+If this is not enough, teacher said that the course's objectives can also be made to another website to get point. So here are the links where i fetch NASA's picture of the day to my another portfolio in the news section!: https://github.com/mikakorkiakoski/javascripttehtava4/blob/main/pictureoftheday.js .
 https://mikakorkiakoski.github.io/javascripttehtava4/news.html
 
 
@@ -221,4 +226,4 @@ https://mikakorkiakoski.github.io/javascripttehtava4/news.html
 
 ### 5/5 Effective use of asynchronous data to enhance user experience (like filtering, sorting).
 
-no.
+I don't GET any asynchronous data to my webpage with asynchronous calls and i don't even have any data i would need to GET. I only POST asynchronous data to my sheet with call. To enhance user experience there, my program puts name, email, and message to their own sections and to their own lines.
