@@ -105,7 +105,7 @@ Forms and links are being used, i didn't need any media for my page but i added 
 
 ### 4/5 Tables are effectively used.
 
-I didn't want to use tables in my Portfolio page, so teacher said to me that table can be made to different site. So here are the links for my table page to get a point from this section: https://mikakorkiakoski.github.io/mikantable/ .
+I didn't want to use tables in my Portfolio page, so teacher said to me that table can be made to different site to get a point from this review section. So here are the links for my table page: https://mikakorkiakoski.github.io/mikantable/ .
 https://github.com/mikakorkiakoski/mikantable/blob/main/index.html .
 
 
@@ -192,8 +192,10 @@ class 'tablinks' using the 'for...'of' loop, represented by 'tablink'.
 ![js4.2](reviewImages/js4.2.png)
 
 ### 5/5 Consistent use of Object-Oriented JavaScript principles.
-As i said i use 'Typed' object as a constructor. I got this object from library shown in the end of index.html file. Another instances of object-oriented programming principles that are being used are var tablinks and var tabcontents that are using HTMLCollection to return elements with the specified class name. Also there is HTMLDivElement objects being used when i want to access and modify the styles and properties of DOM elements, such as
-ScrollToTopButton.style.display = "block";
+I created an object from 'Typed' constructor and assigned it to variable called 'typed'. I got this object from external library shown in the end of index.html file. Another instances of object-oriented programming principles that are being used are var tablinks and var tabcontents that are using HTMLCollection to return elements with the specified class name. Also there is HTMLDivElement objects being used when i want to access and modify the styles and properties of DOM elements, such as
+ScrollToTopButton.style.display = "block"; If this is not enough to get a point, i definitely fill the review criterias of this section in another program to get a point from this section, which you can check out with following links: https://mikakorkiakoski.github.io/javascripttehtava1/
+https://github.com/mikakorkiakoski/javascripttehtava1/blob/main/chess.js
+
 
 ### Asynchronous Operations
 
@@ -208,7 +210,7 @@ ScrollToTopButton.style.display = "block";
 
 
 ### 3/5 Data from the asynchronous call is displayed on the webpage.
-While the data fetched is not directly displayed on the webpage, the user receives feedback on the form submission result. On the other hand, i can see the message and message sender's name and email that is submitted with contact form in google sheet with this code:
+While the data fetched is not directly displayed on the webpage, the user receives feedback on the form submission result and it also informs when data is being sended. On the other hand, i can see the message and message sender's name and email that is submitted with contact form in google sheet with this code:
 
 ![ao1](reviewImages/contactformcode.png)
 
@@ -226,4 +228,4 @@ https://mikakorkiakoski.github.io/javascripttehtava4/news.html
 
 ### 5/5 Effective use of asynchronous data to enhance user experience (like filtering, sorting).
 
-I don't GET any asynchronous data to my webpage with asynchronous calls and i don't even have any data i would need to GET. I only POST asynchronous data to my sheet with call. To enhance user experience there, my program puts name, email, and message to their own sections and to their own lines.
+I don't GET any asynchronous data to my webpage with asynchronous calls and i don't even have any data i would need to GET. I only POST asynchronous data to my sheet with call. To enhance user experience in the sheet, my program puts name, email, and message to their own sections and to their own lines. Also as i said, when asynchronous call is being made, the user can see when fetch call is posting to sheet, and the user can see when posting is successful or not. 
