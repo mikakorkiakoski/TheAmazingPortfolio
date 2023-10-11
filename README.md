@@ -164,7 +164,7 @@ Here are 3 event listeners and if you just open app.js you can see every functio
 ![js2](reviewImages/js2.2.png)
 
 ### 3/5 Use of arrays, objects, and functions.
-In the function opentab, tablinks and tabcontents are arrays of elements selected by their class names.
+In the function opentab, tablinks and tabcontents are arrays.
 
 ![js3](reviewImages/js3.png)
 
