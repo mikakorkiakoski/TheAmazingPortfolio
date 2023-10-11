@@ -168,11 +168,11 @@ In the function opentab, tablinks and tabcontents are arrays.
 
 ![js3](reviewImages/js3.png)
 
-In the typing animation there is variable called 'typed' which is instance from class called 'Typed'.
+There are many objects in app.js file, but here's one example, i use this object to create typing animation:
 
 ![js3.1](reviewImages/js3.1.png)
 
-Previous screenshots should have revealed that there are multiple functions in app.js. You can also check the file if you wish.
+Previous screenshots should have revealed that there are multiple functions in app.js. You can also check the app.js file if you wish.
 
 ### 4/5 Advanced logic, looping through data, and dynamic DOM updates.
 There is advanced logic and dynamic DOM updates in typing animation for example.
